@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Thank you for your purchase</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fill in the blanks to place your order!</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="person1">Full Name</label>
+            <input id="person1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="payment">Payment method</label>
+            <input id="payment" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Shipping address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+
+
+          <button type="submit" class="btn">Place Order!</button>
+        </form>
+      </div>
+
+      <div id="confirmation receipt">
+        <h1>confirmation receipt</h1>
+        <p>Thank you <span class="person1"></span> for placing this order by your <span class="payment"></span> , we will ship this package to your shipping address as following; <span class="address"></span></p>.
+      </div>
+    </div>
+  </body>
+</html>
