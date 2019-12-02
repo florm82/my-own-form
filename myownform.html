@@ -16,6 +16,7 @@
             <label for="person1">Full Name</label>
             <input id="person1" class="form-control" type="text">
           </div>
+
           <div class="form-group">
             <label for="payment">Payment method</label>
             <select class="form-control" id="payment">
@@ -23,13 +24,53 @@
               <option>paypal</option>
               <option>debit card</option>
             </select>
-
           </div>
+
+          <label for="shipmentmethod">Shipping method</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="shipmentmethod" value="express Shipping">
+              Express shipping
+            </label>
+            <label>
+              <input type="radio" name="shipmentmethod" value="normal Shipping">
+              Normal shipping
+            </label>
+            <label>
+              <input type="radio" name="shipmentmethod" value="ground Shipping">
+              Ground shipping
+            </label>
+          </div>
+
           <div class="form-group">
             <label for="address">Shipping address</label>
             <input id="address" class="form-control" type="text">
           </div>
 
+          <label for="product size">Product Size</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="product size" value="Small">
+              Small
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="product size" value="Medium">
+              Medium
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="product size" value="Big">
+              Big
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label for="delivery date">Delivery Date</label>
+            <input id="delivery date" class="form-control" type="date">
+          </div>
 
           <button type="submit" class="btn">Place Order!</button>
         </form>
@@ -39,6 +80,10 @@
         <h1>confirmation receipt</h1>
         <p>Thank you <span class="person1"></span> for placing this order by your <span class="payment"></span> , we will ship this package to your shipping address as following; <span class="address"></span></p>.
       </div>
+      <div id="confirmation receipt">
+        <p>Shipping will be made on <span class="delivery date"></span> and your product size will be <span class="product size"></span> and shipping method will be <span class="shipment method"></span>.
+      </div>
+
     </div>
   </body>
 </html>
